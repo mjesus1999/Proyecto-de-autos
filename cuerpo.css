@@ -1,0 +1,369 @@
+/*Esta parte es donde va el menu del encabezado*/
+
+* {
+padding: 0;
+margin: 0;
+font-family:sans-serif;
+}
+body{
+background-color: #00FF8C;
+}
+body > ul {
+list-style: none;
+background: #333;
+text-align: center;
+}
+body > ul li {
+display: inline-block;
+position: relative;
+}
+body > ul li a {
+display: block;
+padding: 20px 25px;
+color: #FFF;
+text-decoration: none;
+text-align: center;
+font-size: 16px;
+}
+body > ul li ul.dropdown li {
+display: block;
+background: #333;
+margin: 2px 0px;
+}
+body > ul li ul.dropdown {
+width:auto;
+background: #00FF8C;
+position: absolute;
+z-index: 999;
+display: none;
+}
+body > ul li a:hover {
+background: #222;
+}
+body > ul li:hover ul.dropdown{
+display: block;
+}
+       
+
+
+/*Esto es la imagen del encabezado*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.encabezado-img {
+    background-image: url(go.jpg);
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.encabezado-img p {
+    font-size: 58px;
+}
+.encabezado-img h1 {
+    font-size: 50px;
+    padding: 305px 0;
+}
+
+/*Aqui van el boton flotante*/
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container-boton-wasap{
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 80%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton-wasap:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 30px;
+    height: 30px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+/*Boton que enlaza a la tienda virtual*/
+.btn{
+    display: inline-block;
+    background-color: rgb(233, 123, 50);
+    padding: 15px;
+    text-decoration: none;
+    text-decoration: rgb(255, 255, 255);
+}
+/*Aqui le pondre un boton para desplegar un pequeño contenido de lo que trata la galeria*/
+
+body{
+	
+	font-family: monospace;
+}
+.titulo{
+	
+	text-align: center;
+}
+.contenedor-galeria{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: auto;
+}
+.galeria__img{
+	width: 300px;
+	height: 200px;
+	margin-bottom: 30px;
+	object-fit: cover;
+	filter: brightness(100%);
+}
+
+
+/* Aqui ira lo que contiene cada imagen de la galeria*/
+.container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.titulo{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin: 30px;
+	font-size: 30px;
+}
+.caja img{
+	width: 520px;
+	height: 380px;
+}
+.caja{
+	margin: 15px;
+}
+.caja p{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*Boton para ingresar a la tienda*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #b40d0d;
+    /* padding-top: 80px; */
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 30px 0px;
+}
+img {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15%;
+    height: 70px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.scroll{
+    background-color: aliceblue;
+    box-shadow: .1rem .2rem .3rem #af1212;
+}
+.scroll img{
+    filter: invert(15%);
+}           
+.scroll h1{
+    color: #eb370f;
+}
+.carrito{
+    filter: invert(100%);
+    width: 45px;
+    height: auto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.contenedor>div{
+    box-shadow: 0px 0px 5px 0px rgba(177, 13, 13, 0.75);
+    background-color: #2D4263;
+    border-radius: 20px;
+}
+.contenedor>div:hover{
+    background-color: #11294d;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:15px;
+}
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio {
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #263143;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #2D4263;
+}
+/*pie de pagina*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    line-height: 1.2;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #2d2e33;
+    padding: 60px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #f1bc0d;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(40, 130, 214, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #ffffff;
+    background-color: white;
+}
+
+@media(max-width: 740px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .footer-col h4::before{
+        all: unset;
+    }
+}
+
+@media(max-width: 555px){
+    .footer-col{
+        width: 100%;
+    }
+}

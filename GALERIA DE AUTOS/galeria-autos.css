@@ -1,0 +1,160 @@
+/*galeria de marcas de autos*/
+*body{
+	
+	font-family: monospace;
+}
+.titulo{
+	
+	text-align: center;
+}
+.contenedor-galeria{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin: auto;
+}
+.galeria__img{
+	width: 300px;
+	height: 200px;
+	margin-bottom: 30px;
+	object-fit: cover;
+	filter: brightness(100%);
+}
+
+/*GALERIA DE LOS AUTOS */
+@import url('https://fonts.googleapis.com/css? family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+	font-family: 'Poppins',sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(45deg,#00bcd4,#ffeb3b);
+}
+.container
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 100px 50px;
+	padding: 100px 50px;
+}
+.container .card{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items:  flex-start;
+	width: 350px;
+	height: 300px;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+	transition: 0.5s;
+}
+.container .card:hover
+{
+	height: 400px;
+}
+.container .card .imgBx
+{
+	position: absolute;
+	top: 20px;
+	width: 300px;
+	height: 220px;
+	background: #333;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.container .card:hover .imgBx
+{
+	top: -100px;
+	scale: 0.75;
+	box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.container .card .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container .card .content
+{
+	position: absolute;
+	top: 230px;
+	width: 100%;
+	padding: 0 30px;
+	height: 55px;
+	overflow: hidden;
+	text-align: center;
+	transition: 0.5s;
+}
+.container .card:hover .content{
+	top: 130px;
+	height: 250px;
+}
+.container .card .content h2{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: var(--clr);
+}
+.container .card .content p
+{
+	color: #333;
+}
+.container .card .content a{
+	position: relative;
+	top: 15px;
+	display: inline-block;
+	padding: 12px 25px;
+	background: var(--clr);
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
+	border-radius: 8px;
+}
+/*Aqui van el boton flotante*/
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container-boton-wasap{
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 80%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton-wasap:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 30px;
+    height: 30px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
